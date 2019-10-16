@@ -27,20 +27,20 @@ for y in 1...endY  {
  4 Пункт для всех заданий(кроме первого):
  Создайте массив из 10 элементов. Заполните случайным образом. Вывести массив на экран.
  */
-var arr = [3, 5, 4, 10, 2, 6, 12, 42, 74, 1]
-print (arr)
+var arr = [-3, -5, -4, -10, -2, -6, -1, -42, -74,  1]
+print ("\nArray is \(arr)")
 
 /*
  4.2 Найдите сумму нечетных элементов массива и произведение четных элементов массива
  */
 var sum = 0
-var product = 0
+var product = 1
 for item in arr {
     if item % 2 != 0 {
         sum += item
     }
     else {
-        product += item
+        product *= item
     }
 }
 print ("Sum of odd elements in the array is \(sum). Product of even elements in the array is \(product)")
@@ -77,14 +77,23 @@ print ("new array is \(arr)")
 /*
  4.4 Найдите минимальный положительный элемент массива
  */
+var arrPositive = [Int]()
+var minIndex = 0
 
-temp = arr[0]
-for i in arr where i > 0 {
-    if temp > i {
-        temp = i
-    }
+for (_, value) in arr.enumerated() where value > 0 {
+    arrPositive.append(value)
 }
-print ("min positive number = \(temp)")
+if arrPositive.isEmpty {
+    print ("there are no positive elements")
+} else {
+for (index, _) in arrPositive.enumerated(){
+    if arrPositive[index] < arrPositive[minIndex] {
+    minIndex = index
+    }
+    print ("A positive minimum is \(arr[minIndex])")
+}
+    
+}
 
 /*
  4.5 Найдите кол-во элементов массива, которые больше 5 и меньше 20. Выведите их на экран.
@@ -102,13 +111,20 @@ print ("a quantity of these elements is \(countElements)")
 /*
  Для пытливых умов:
  4.Доп.1. Если в данном массиве действительных чисел а1,...,аn есть хотя бы один член, меньший чем -2,то все отрицательные члены заменить их квадратами.
- [2, -4, 5,  -7] -> [2, 16, 5, 49]
+ [2, -4, 5, -7] -> [2, 16, 5, 49]
  */
-var arrayN = [2, -4, 5, -7]
+var arrayN = [2, -1, 5, -3]
 print ("original array is \(arrayN)")
 var exponent = 0
-for (index, element) in arrayN.enumerated() where arrayN[index] < -2 {
+var status = false
+for (_, element) in arrayN.enumerated() where element < -2 {
+    status = true
+}
+if status {
+    for (index, element) in arrayN.enumerated() where element < 0 {
     arrayN[index] = element * element
+    print (arrayN)
+}
 }
 print (arrayN)
 
