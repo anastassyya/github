@@ -11,30 +11,30 @@
 // (Используйте и optional binding  и forced unwrapping)
 // */
 //
-//// forced unwraps
-//let a = ["23", "54a", "76a", "85y", "26"]
-//var sum = 0
-//for i in a {
-//    if Int (i) != nil {
-//        sum += Int (i)!
-//    }
-//}
-//print (sum)
-//
+// forced unwraps
+let a = ["23", "54a", "76a", "85y", "26"]
+var sum = 0
+for i in a {
+    if Int (i) != nil {
+        sum += Int (i)!
+    }
+}
+print (sum)
 
-// optional binding
-//let a = ["23", "54a", "76a", "85y", "26"]
-//var sum = 0
-//for i in a {
-//    if let b = Int (i) {
-//        sum += b
-//
-//    }
-//}
-//print (sum)
-//
-//
-//
+
+ // optional binding
+let a1 = ["23", "54a", "76a", "85y", "26"]
+var sum1 = 0
+for i in a1 {
+    if let b = Int (i) {
+        sum1 += b
+
+    }
+}
+print (sum1)
+
+
+
 
 
 //2.2. С сервера к нам приходит тюпл с тремя параметрами:
@@ -142,21 +142,21 @@ if student5.mark != nil {
 
 typealias Text = String
 typealias TupleType = (numberOne: Text?, numberTwo: Text?)
-var a: TupleType = ("190", "67")
-var b: TupleType = ("100", nil)
-var c: TupleType = ("-65", "70")
+var a2: TupleType = ("190", "67")
+var b2: TupleType = ("100", nil)
+var c2: TupleType = ("-65", "70")
 
 
-if a.0 != nil && a.1 != nil {
-    print (a)
+if a2.0 != nil && a2.1 != nil {
+    print (a2)
 }
 
-if b.0 != nil && b.1 != nil {
-    print (b)
+if b2.0 != nil && b2.1 != nil {
+    print (b2)
 }
 
-if c.0 != nil && c.1 != nil {
-    print (c)
+if c2.0 != nil && c2.1 != nil {
+    print (c2)
 }
 
 /*СТРОКИ
@@ -172,16 +172,16 @@ if c.0 != nil && c.1 != nil {
 
 // nil-coalescing operator
 //
-let a = ["23", "54a", "76a", "85y", "26"]
+let a3 = ["23", "54a", "76a", "85y", "26"]
 var y = 0
-var sum = 0
-for i in a {
+var sum3 = 0
+for i in a3 {
     y = Int (i) ?? 0
     print (y, terminator: "+")
-    sum += y
+    sum3 += y
 }
 
-print ("=\(sum)")
+print ("=\(sum3)")
 
 
 
@@ -189,13 +189,13 @@ print ("=\(sum)")
  можно использовать составные символы. Посчитайте длину строки
  */
 
-var a: Character = "\u{2230}"
-var b: Character = "\u{2317}"
-var c: Character = "\u{263a}"
-var d: Character = "\u{2460}"
-var e: Character = "\u{25EF}"
-var sum = String (a) + String (b) + String (c) + String (d) + String (e)
-print ("all is \(sum); elements are \(sum.count)")
+var a4: Character = "\u{2230}"
+var b4: Character = "\u{2317}"
+var c4: Character = "\u{263a}"
+var d4: Character = "\u{2460}"
+var e4: Character = "\u{25EF}"
+var sum4 = String (a4) + String (b4) + String (c4) + String (d4) + String (e4)
+print ("all is \(sum4); elements are \(sum4.count)")
 
 
 
@@ -204,12 +204,13 @@ print ("all is \(sum); elements are \(sum.count)")
  Используя цикл for определите под каким индексов в строке находится этот символ
  */
 
-var a = "abcdefghijklmnopqrstuvwxyz"
-let b: Character = "k"
-let c = a.index(of: "k")
-let i = c?.encodedOffset       // i will be an Int. You need "?" because it might be nil, no such character found.
+var alphabet = "abcdefghijklmnopqrstuvwxyz"
+let symbol: Character = "k"
+var count = 0
 
-if i != nil {                   // You MUST deal with the optional, unwrap it only if not nil.
-    print("i = ",i!)            // "!" str1ps off "optional" specification (unwraps i).
+for letter in alphabet {
+count += 1
+    if symbol == letter {
+        print ("A letter \(symbol) is on \(count) position")
+    }
 }
-
