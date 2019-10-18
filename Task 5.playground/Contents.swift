@@ -7,46 +7,62 @@
 */
  
  print ("Задание 1. Найти сумму  элементов, находящихся между первым и последним отрицательными элементами")
- var arr = [2, 8, 4, -5, 2, -1, 0, -40]
+ var arr = [2, 8, 4, 5, 2, -1, 12, 40]
  print ("original array is \(arr)")
  var sumFirst = 0
  var firstNegative = 0
  var secondNegative = 0
  var count = arr.count
- for (index, element) in arr.enumerated() {
+ var countNegative = 0
+ for (index, _) in arr.enumerated() {
     if arr[index] < 0 {
+        countNegative += 1
+    }
+  }
+ 
+ if countNegative > 1 {
+    for (index, _) in arr.enumerated() where arr[index] < 0 {
         firstNegative = index
         break
- }
- }
- for index in (0..<arr.count).reversed() {
-    if arr[index] < 0 {
-    secondNegative = index
-    break
- }
- }
-for i in (firstNegative+1)..<secondNegative {
-    sumFirst += arr[i]
-}
+    }
+    for index in (0..<arr.count).reversed() where arr[index] < 0 {
+        secondNegative = index
+        break
+    }
+    for i in firstNegative+1..<secondNegative {
+        sumFirst += arr[i]
+        }
  print ("the sum of elements, which are between first and last negative elements are \(sumFirst)")
+ } else {
+    print ("There are no two negative numbers")
+ }
 
 ////////////////////
  print ("Задание 2. Преобразовать массив так, чтобы сначала шли все отрицательные     элементы, а потом положительные(0 считать положительным). (не использовать встроенный remove, insert, append)")
- var arrSecond = [2, 8, 4, -5, 2, -1, 0, -40]
+ var arrSecond = [2, 8, 4, 0, 2, 0, 0, -1]
  print ("original array is \(arrSecond)")
- var count = 0
- var temp = 0
- var elemArraySecond = 0
- 
- for (index, element) in arrSecond.enumerated() {
-    if element < 0 {
-        temp = arrSecond [index]
-        arrSecond [index] = arrSecond[0 + count]
-        arrSecond [0+count] = temp
-        count += 1
- }
- }
- print (arrSecond)
+ var countOfNegative = 0
+ var countOfCycle = 0
+ var temp1 = 0
+ var temp2 = 0
+ var certainIndex = 0
+
+for (index, value) in arrSecond.enumerated() where value < 0 {
+    countOfCycle = 0
+    temp1 = arrSecond [countOfNegative]
+    arrSecond [countOfNegative] = arrSecond[index]
+    certainIndex = index
+        for _ in (countOfNegative+1)..<certainIndex {
+temp2 = arrSecond[certainIndex-countOfCycle]
+            arrSecond[certainIndex-countOfCycle] = arrSecond[certainIndex-countOfCycle-1]
+arrSecond[certainIndex-countOfCycle-1] = temp2
+            countOfCycle += 1
+    }
+arrSecond[countOfNegative+1] = temp1
+    countOfNegative += 1
+}
+print (arrSecond)
+
 
 /////////////////////////////
 
@@ -56,19 +72,20 @@ for i in (firstNegative+1)..<secondNegative {
  var sumPositive = 0
  var countPositive = 0
  var sumNegative = 0
- var countNegative = 0
- for (_, element) in arrThird.enumerated() {
+ var countNegative2 = 0
+ for element in arrThird {
  if element >= 0 {
  sumPositive += element
  countPositive += 1
  }
+//else if использовано для получения второго условия задачи: работа с отрицательными элементами массива
  else if element < 0 {
  sumNegative += element
- countNegative += 1
+ countNegative2 += 1
  }
  }
  print ("Sum of positive elements is \(sumPositive), quantity of positive elements is \(countPositive)")
- print ("Sum of negative elements is \(sumNegative), quantity of negative elements is \(countNegative)")
+ print ("Sum of negative elements is \(sumNegative), quantity of negative elements is \(countNegative2)")
  
 ///////////////////////////////
  print ("Задание 4. Сжать массив, удалив из него все 0, и заполнить освободившиеся справа элементы значениями -1. (не использовать встроенный remove, insert, append)")
@@ -76,7 +93,7 @@ for i in (firstNegative+1)..<secondNegative {
  print ("original array is \(arrFourth)")
  var numberOfZero = 0
  var tempFourth = 0
- for i in (0...arrFourth.count-1)
+ for i in (0..<arrFourth.count)
  {
  if arrFourth[i] == 0 {
  numberOfZero += 1
@@ -117,14 +134,15 @@ for i in (firstNegative+1)..<secondNegative {
 
 /////////////////////////////
 
- print ("Задание 6. Дан массив случайных чисел в диапазоне от -20 до +20. Необходимо найти позиции крайних отрицательных элементов (самого левого отрицательного элемента и самого правого отрицательного элемента) и отсортировать элементы, находящиеся между ними. ")
- var arrSixth = [-16, 10, -4, 5, 1, 0, 12, -12]
+ print ("Задание 5.6. Дан массив случайных чисел в диапазоне от -20 до +20. Необходимо найти позиции крайних отрицательных элементов (самого левого отрицательного элемента и самого правого отрицательного элемента) и отсортировать элементы, находящиеся между ними. ")
+ var arrSixth = [16, -10, 4, 5, -1, -12, -19, -12]
  print ("original array is \(arrSixth)")
- var leftNegative = 0
+var leftNegative: Int! = 0
  var leftIndex = 0
- var rightNegative = 0
+var rightNegative: Int! = 0
  var rightIndex = 0
  var tempSixth = 0
+
  for (index, element) in arrSixth.enumerated () {
  if element < 0 {
  leftNegative = arrSixth[index]
@@ -141,25 +159,26 @@ for i in (firstNegative+1)..<secondNegative {
  break
  }
  }
- 
- var min = leftIndex + 1
- for (index, element) in (arrSixth[leftIndex+1..<rightIndex]).enumerated() {
- if element < arrSixth[min] {
- min = index
- }
- }
- 
- for i in (leftIndex+1)..<rightIndex {
- for i in (leftIndex+1)..<rightIndex {
- if arrSixth[i] < arrSixth[min] {
- tempSixth = arrSixth[i]
- arrSixth[i] = arrSixth[min]
- arrSixth[min] = tempSixth
- }
- }
- min += 1
- }
- print ("new array is \(arrSixth)")
+var min = leftIndex + 1
+if rightNegative != nil && leftNegative != nil && rightIndex != leftIndex && rightIndex-leftIndex != 1 {
+    for _ in (leftIndex+1)..<rightIndex {
+        for i in (leftIndex+1)..<rightIndex  {
+            if arrSixth[i] > arrSixth[min] {
+                tempSixth = arrSixth[i]
+                arrSixth[i] = arrSixth[min]
+                arrSixth[min] = tempSixth
+            }
+        }
+        min += 1
+    }
+    print ("new array is \(arrSixth)")
+
+} else if rightIndex - leftIndex == 1 {
+    print ("array has not changed \(arrSixth)")
+} else {
+    print ("there no two negative numbers in array")
+}
+
 
 /////////////////////////////
 
@@ -167,10 +186,11 @@ for i in (firstNegative+1)..<secondNegative {
  var arrSeventh = [4, 6, 1, 8, 7, 19, 3, 2, 11, 13, 5, 9, 18, 10, 17, 16, 12, 14, 15, 20]
  print ("original array is \(arrSeventh)")
  var randomNumber = 5
+print ("random number = \(randomNumber)")
  var indexRandomNumber = 0
  var minNumber = 0
  var temp = 0
- for (index, element) in arrSeventh.enumerated() {
+ for (index, _) in arrSeventh.enumerated() {
  if arrSeventh[index] == randomNumber {
  indexRandomNumber = index
  print ("indexRandomNumber = \(indexRandomNumber)")
@@ -181,9 +201,9 @@ for i in (firstNegative+1)..<secondNegative {
  minNumber = arrSeventh [i]
  }
  }
+ for _ in 0..<indexRandomNumber {
  for i in 0..<indexRandomNumber {
- for i in 0..<indexRandomNumber {
- if arrSeventh[i] > arrSeventh[minNumber] {
+ if arrSeventh[i] < arrSeventh[minNumber] {
  temp = arrSeventh[i]
  arrSeventh[i] = arrSeventh[minNumber]
  arrSeventh[minNumber] = temp
@@ -192,7 +212,7 @@ for i in (firstNegative+1)..<secondNegative {
  minNumber += 1
  }
  
- for i in indexRandomNumber...arrSeventh.count-1 {
+ for _ in indexRandomNumber...arrSeventh.count-1 {
  for i in indexRandomNumber...arrSeventh.count-1  {
  if arrSeventh[i] > arrSeventh[minNumber] {
  temp = arrSeventh[i]
