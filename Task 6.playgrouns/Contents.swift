@@ -24,34 +24,34 @@ print (umbrella() + telephone() + exclamationMark())
 print ("6.2. Написать функцию которая: принимает массив целых чисел, возвращает  минимальный положительный элемент массива (Int). Если такого элемента не найдено, то возвращает nil")
 
 func minPositiveElement (array: [Int]) -> Int? {
-    var minPosElem : Int?
-    if array.isEmpty {
-        print ("There are no elements in the array")
-    }
-    for (index, element) in array.enumerated() {
+    var minPosElem: Int? = nil
+    for element in array {
         if element > 0 {
-            minPosElem = array[index]
+            minPosElem = element
             break
         }
     }
-    for (index, element) in array.enumerated() {
+    for element in array {
         if element > 0 && element < minPosElem! {
-            minPosElem = array[index]
+            minPosElem = element
         }
     }
     return minPosElem
 }
-var arraySecond = [-1, -4, -7, -6, -5, -5, -9]
+
+var arraySecond = [-1, -4, -7, -6, -5, 5, -9]
 print ("original array is \(arraySecond)")
-print ("Minimum positive element is \(minPositiveElement(array : arraySecond))")
+if let variable = minPositiveElement (array: arraySecond) {
+    print ("Minimum positive element is \(variable)")
+} else {
+    print ("there are no positive elements")
+}
+
 
 ///////////////////////
 print ("6.3. Написать функцию которая: принимает массив целых чисел, возвращает  опциональный кортеж содержащий минимальный положительный элемент массива и его индекс (index: Int, value: Int)? Если такого элемента не найдено, то возвращает nil")
 
 func minPosElemAndItsIndex (array : [Int]) -> (index : Int, value : Int)? {
-    if array.isEmpty {
-        print ("There are no elements in the array")
-    }
     var minPos : (index : Int, value : Int)?
     for (index, element) in array.enumerated() {
         if element > 0 {
@@ -68,15 +68,17 @@ func minPosElemAndItsIndex (array : [Int]) -> (index : Int, value : Int)? {
 }
 
 print ("original array is \(arraySecond)")
-print ("Minimum positive element and its index are \(minPosElemAndItsIndex(array : arraySecond))")
+if let variable = minPosElemAndItsIndex(array : arraySecond) {
+    print ("Minimum positive element and its index are \(variable)")
+} else {
+    print ("there are no positive elements")
+}
+
 
 ///////////////////////////////
 print ("6.4. Написать функцию которая: принимает массив целых чисел, возвращает  кортеж (tuple) содержащий минимальный положительный элемент массива и его индекс (index: Int?, value: Int?). Если такого элемента не найдено, то возвращает кортеж, значения в котором равны nil")
 
 func minPosElemAndItsIndexSecond (array : [Int]) -> (index : Int?, value : Int?) {
-    if array.isEmpty {
-        print ("There are no elements in the array")
-    }
     var minPos : (index : Int?, value : Int?)
     for (index, element) in array.enumerated() {
         if element > 0 {
@@ -89,15 +91,17 @@ func minPosElemAndItsIndexSecond (array : [Int]) -> (index : Int?, value : Int?)
             minPos.index = index
             minPos.value = element
         }
-        else {
-            return (nil, nil)
-        }
     }
     return (minPos.index!, minPos.value!)
 }
 
 print ("original array is \(arraySecond)")
-print ("Minimum positive element and its index are \(minPosElemAndItsIndexSecond(array : arraySecond))")
+if let variable1 = minPosElemAndItsIndexSecond(array : arraySecond).index , let variable2 = minPosElemAndItsIndexSecond(array : arraySecond).value {
+    print ("Minimum positive element and its index are \(variable1), \(variable2)")
+} else {
+    print ("there are no positive elements")
+}
+
 
 
 ////////////
@@ -122,7 +126,7 @@ print ("Reversed array is \(reversedArray (array: arrayTask651))")
 ////////////////////////
 print ("6.5.2 Используя  inout  выполните задание номер 6.4 так, чтобы функция не возвращала перевернутый массив, но меняла элементы в существующем. Что будет если убрать inout?")
 
-func reversedArrayChange (array : inout [Int]) -> [Int] {
+func reversedArrayChange (array : inout [Int]){
     var temp = 0
     let count = array.count
     for index in 0..<count/2 {
@@ -130,11 +134,12 @@ func reversedArrayChange (array : inout [Int]) -> [Int] {
         array[index] = array[count-1-index]
         array[count-1-index] = temp
     }
-    return array
 }
 
 print ("Array is \(arrayTask651)")
-print ("Reversed array is \(reversedArrayChange (array: &arrayTask651))")
+reversedArrayChange(array : &arrayTask651)
+print ("Reversed Array is \(arrayTask651)")
+
 
 //////////////////
 print ("6.6. Создайте функцию, которая принимает два массива ar1 и ar2. Возвращает массив в котором элементы Х[i] состоят из суммы элементов входящих массивов поэлементно. Размер массива Х должен быть равен наибольшему размеру из ar1 и ar2. Например: ar1:[1, 2, 3, 4], arr2: [10, 20, 30, 40, 50, 60]  -> X[11, 22, 33, 44, 50, 60] ")
@@ -152,9 +157,9 @@ func arraysChange (_ arrayFirst : [Int], _ arraySecond : [Int]) -> [Int] {
         copyArrayFirst = copyArrayFirst + Array(repeating : 0, count : (copyArraySecond.count - copyArrayFirst.count))
         count = copyArraySecond.count
     }
-        for index in 0..<count {
-            copyArrayThird.append (copyArrayFirst[index] + copyArraySecond[index])
-        }
+    for index in 0..<count {
+        copyArrayThird.append (copyArrayFirst[index] + copyArraySecond[index])
+    }
     return copyArrayThird
 }
 var arr1 = [1, 2, 3, 4]
