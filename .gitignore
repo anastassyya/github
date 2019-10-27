@@ -1,7 +1,3 @@
 # Игнорировать ВСЕ файлы и директории, включая поддиректории и файлы в них
-* .xcplayground
-* .plist
-* .xcuserstate
 * .DS_Store
-* .xcworkspacedata
 playground.xcworkspace/*
