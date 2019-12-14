@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task_17_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="Nvp-6p-hiO">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rPj-XC-oEa">
+                                <rect key="frame" x="432.5" y="40" width="159" height="477"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X24-UU-MAz" customClass="UIImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X24-UU-MAz" secondAttribute="height" multiplier="1:1" id="5TJ-ws-WK6"/>
+                                        </constraints>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0e-cw-X5L" customClass="UIImageView">
+                                        <rect key="frame" x="0.0" y="159" width="159" height="159"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCw-CJ-q42" customClass="UIImageView">
+                                        <rect key="frame" x="0.0" y="318" width="159" height="159"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="d0e-cw-X5L" firstAttribute="height" secondItem="X24-UU-MAz" secondAttribute="height" id="NI3-s5-5EJ" userLabel="Yellow.height = Safe Area.height / 5"/>
+                                    <constraint firstItem="d0e-cw-X5L" firstAttribute="width" secondItem="X24-UU-MAz" secondAttribute="width" id="PFo-g0-cuK"/>
+                                    <constraint firstItem="d0e-cw-X5L" firstAttribute="top" secondItem="X24-UU-MAz" secondAttribute="bottom" id="Rxb-zF-Zja"/>
+                                    <constraint firstItem="zCw-CJ-q42" firstAttribute="width" secondItem="X24-UU-MAz" secondAttribute="width" id="Xe9-5m-HXA"/>
+                                    <constraint firstItem="zCw-CJ-q42" firstAttribute="top" secondItem="d0e-cw-X5L" secondAttribute="bottom" id="iJz-do-nMo"/>
+                                    <constraint firstItem="zCw-CJ-q42" firstAttribute="height" secondItem="X24-UU-MAz" secondAttribute="height" id="tQR-kx-fof"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0q1-hA-Xhg">
+                                <rect key="frame" x="16" y="525" width="992" height="805"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <color key="tintColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColour" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Gl-84-xlM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="csp-we-hnV" firstAttribute="trailing" secondItem="0q1-hA-Xhg" secondAttribute="trailing" constant="16" id="1dD-oG-zUZ"/>
+                            <constraint firstItem="rPj-XC-oEa" firstAttribute="centerX" secondItem="0q1-hA-Xhg" secondAttribute="centerX" id="FaB-Sb-8qw"/>
+                            <constraint firstItem="0q1-hA-Xhg" firstAttribute="top" secondItem="rPj-XC-oEa" secondAttribute="bottom" constant="8" symbolic="YES" id="G4Q-FN-LiP"/>
+                            <constraint firstItem="csp-we-hnV" firstAttribute="bottom" secondItem="0q1-hA-Xhg" secondAttribute="bottom" constant="16" id="Y11-ff-n7j"/>
+                            <constraint firstItem="0q1-hA-Xhg" firstAttribute="leading" secondItem="csp-we-hnV" secondAttribute="leading" constant="16" id="mDm-Ez-4Mb"/>
+                            <constraint firstItem="rPj-XC-oEa" firstAttribute="top" secondItem="csp-we-hnV" secondAttribute="top" constant="16" id="zFZ-5I-SrT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="csp-we-hnV"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="70"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStart" destination="0q1-hA-Xhg" id="Kkq-EO-yGi"/>
+                        <outlet property="green" destination="zCw-CJ-q42" id="uey-uN-9Xe"/>
+                        <outlet property="red" destination="X24-UU-MAz" id="bm5-WI-Sat"/>
+                        <outlet property="yellow" destination="d0e-cw-X5L" id="wg0-re-fcD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="99.400299850074973"/>
+        </scene>
+    </scenes>
+</document>
