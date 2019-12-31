@@ -20,25 +20,23 @@ class ViewController: UIViewController {
     
     var counter = 1
     
+    override func viewDidLayoutSubviews() {
+        loadViewWithProperties()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadViewWithProperties()
         green.alpha = 0.3
         yellow.alpha = 0.3
         red.alpha = 0.3
-        self.view.layoutIfNeeded ()
-        green.layer.cornerRadius = green.frame.size.width/2
-        green.clipsToBounds = true
-        self.view.layoutIfNeeded ()
-        yellow.layer.cornerRadius = yellow.frame.size.width/2
-        yellow.clipsToBounds = true
-        self.view.layoutIfNeeded ()
-        red.layer.cornerRadius = red.frame.size.width/2
-        red.clipsToBounds = true
+        
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func changeColour(){
+        
         buttonStart.setTitle("NEXT", for: .normal)
         switch counter {
         case 1:
@@ -58,5 +56,20 @@ class ViewController: UIViewController {
         }
 
     }
+    
+    func loadViewWithProperties() {
+    //  self.view.setNeedsLayout ()
+        //self.view.layoutIfNeeded ()
+        green.layer.cornerRadius = green.frame.size.width/2
+        green.clipsToBounds = true
+        //self.view.layoutIfNeeded ()
+        yellow.layer.cornerRadius = yellow.frame.size.width/2
+        yellow.clipsToBounds = true
+        //self.view.layoutIfNeeded ()
+        red.layer.cornerRadius = red.frame.size.width/2
+        red.clipsToBounds = true
+    }
+    
 
 }
+
