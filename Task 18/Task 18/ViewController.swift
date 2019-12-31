@@ -97,26 +97,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //to limit numbers in textfields
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        if (string as NSString).floatValue > 1 {
-//            return false
-//        }
         
         guard let oldText = textField.text, let r = Range(range, in: oldText) else {
             return true
         }
 
         let newText = oldText.replacingCharacters(in: r, with: string)
-        let isNumeric = newText.isEmpty || (Double(newText) != nil)
-        let numberOfDots = newText.components(separatedBy: ".").count - 1
-
-        let numberOfDecimalDigits: Int
-        if let dotIndex = newText.firstIndex(of: ".") {
-            numberOfDecimalDigits = newText.distance(from: dotIndex, to: newText.endIndex) - 1
-        } else {
-            numberOfDecimalDigits = 0
+        let num = Float(newText)
+        if newText.isEmpty {
+            return true
         }
-        
-        return isNumeric && numberOfDots <= 1 && numberOfDecimalDigits <= 2
+        else if newText.count < 3 && num! >= 0 && num! <= 1 {
+            return true
+        }
+        else {
+            showMessage()
+            
+        }
+        return newText.count <= 4 && num! >= 0 && num! <= 1
+    }
+    
+    //show alert if an user entered wrong numbers
+    func showMessage(){
+        let alertController = UIAlertController(title: "Enter numbers from 0 to 1", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
 
 
