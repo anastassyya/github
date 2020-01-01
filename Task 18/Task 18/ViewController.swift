@@ -104,25 +104,40 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         let newText = oldText.replacingCharacters(in: r, with: string)
         let num = Float(newText)
+        
         if newText.isEmpty {
             return true
         }
-        else if newText.count < 3 && num! >= 0 && num! <= 1 {
+        else if newText.count <= 4 && num! >= 0 && num! <= 1 {
             return true
         }
-        else {
-            showMessage()
+        else if newText.count > 4 {
+            showMessageWarningCountSymbols()
             
         }
+        else if num! < 0 || num! > 1 {
+            showMessageWarningChoiceNumbers()
+            print (#function)
+            
+        }
+        
         return newText.count <= 4 && num! >= 0 && num! <= 1
     }
     
     //show alert if an user entered wrong numbers
-    func showMessage(){
+    func showMessageWarningChoiceNumbers(){
         let alertController = UIAlertController(title: "Enter numbers from 0 to 1", message: nil, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    //show alert if an user entered more numbers than maximum
+    func showMessageWarningCountSymbols(){
+        let alertController = UIAlertController(title: "You have entered a large number of decimal places. The maximum number of decimal places is 2", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+
 
 
 }
