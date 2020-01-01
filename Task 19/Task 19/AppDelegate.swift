@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Task 17.2
+//  Task 18
 //
-//  Created by Анастасия Вишневская on 12/6/19.
+//  Created by Анастасия Вишневская on 12/15/19.
 //  Copyright © 2019 Anastasiya Vishnevskaya. All rights reserved.
 //
 
