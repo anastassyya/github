@@ -99,6 +99,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         else {
             blueSlider.value = (blueTextField.text!  as NSString).floatValue
         }
+        changeColourView ()
     }
     
     //to hide the keyboard
