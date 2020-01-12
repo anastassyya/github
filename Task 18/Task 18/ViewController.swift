@@ -16,7 +16,7 @@ extension String {
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-
+    let userDefaults = UserDefaults.standard
 
     @IBOutlet weak var redSlider: UISlider!
     
@@ -43,12 +43,62 @@ class ViewController: UIViewController, UITextFieldDelegate {
         redTextField.delegate = self
         greenTextField.delegate = self
         blueTextField.delegate = self
-        redLabel.text = "0.5"
-        greenLabel.text = "0.5"
-        blueLabel.text = "0.5"
-        redTextField.text = "0.5"
-        greenTextField.text = "0.5"
-        blueTextField.text = "0.5"
+        if let labelRed = userDefaults.string(forKey: Keys.textRedLabel){
+            redLabel.text = labelRed
+        }
+        else {
+            redLabel.text = "0.5"
+        }
+        if let labelGreen = userDefaults.string(forKey: Keys.textGreenLabel){
+            greenLabel.text = labelGreen
+        }
+        else {
+            greenLabel.text = "0.5"
+        }
+        if let labelBlue = userDefaults.string(forKey: Keys.textBlueLabel){
+            blueLabel.text = labelBlue
+        }
+        else {
+            blueLabel.text = "0.5"
+        }
+        if let textFieldRed = userDefaults.string(forKey: Keys.textRedLabel){
+            redTextField.text = textFieldRed
+        }
+        else {
+           redTextField.text = "0.5"
+        }
+        if let textFieldGreen = userDefaults.string(forKey: Keys.textGreenLabel){
+            greenTextField.text = textFieldGreen
+        }
+        else {
+            greenTextField.text = "0.5"
+        }
+        if let textFieldBlue = userDefaults.string(forKey: Keys.textBlueLabel){
+            blueTextField.text = textFieldBlue
+        }
+        else {
+            blueTextField.text = "0.5"
+        }
+        if let sliderRed = userDefaults.object(forKey: Keys.redSlider){
+            redSlider.value = sliderRed as! Float
+        }
+        else {
+            redSlider.value = (redTextField.text!  as NSString).floatValue
+        }
+        
+        if let sliderGreen = userDefaults.object(forKey: Keys.greenSlider){
+            greenSlider.value = sliderGreen as! Float
+        }
+        else {
+            greenSlider.value = (greenTextField.text!  as NSString).floatValue
+        }
+        
+        if let sliderBlue = userDefaults.object(forKey: Keys.redSlider){
+            blueSlider.value = sliderBlue as! Float
+        }
+        else {
+            blueSlider.value = (blueTextField.text!  as NSString).floatValue
+        }
     }
     
     //to hide the keyboard
@@ -71,6 +121,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         default: break
         }
         changeColourView()
+        setUserDefaults()
     }
 
     func changeColourView () {
@@ -92,8 +143,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         default: break
         }
         changeColourView ()
+        setUserDefaults()
     }
-        
     
     //to limit numbers in textfields
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -138,7 +189,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.present(alertController, animated: true, completion: nil)
     }
 
-
-
+    func setUserDefaults() {
+        
+        userDefaults.set(redSlider.value, forKey: Keys.redSlider)
+        userDefaults.set(greenSlider.value, forKey: Keys.greenSlider)
+        userDefaults.set(blueSlider.value, forKey: Keys.blueSlider)
+        userDefaults.set(redTextField.text, forKey: Keys.redTextField)
+        userDefaults.set(greenTextField.text, forKey: Keys.greenTextField)
+        userDefaults.set(blueTextField.text, forKey: Keys.blueTextField)
+        userDefaults.set(redLabel.text, forKey: Keys.textRedLabel)
+        userDefaults.set(greenLabel.text, forKey: Keys.textGreenLabel)
+        userDefaults.set(blueLabel.text, forKey: Keys.textBlueLabel)
+        }
 }
+
+
 
