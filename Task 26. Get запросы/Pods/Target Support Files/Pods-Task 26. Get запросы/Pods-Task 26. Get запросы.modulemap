@@ -1,0 +1,6 @@
+module Pods_Task_26__Get________ {
+  umbrella header "Pods-Task 26. Get запросы-umbrella.h"
+
+  export *
+  module * { export * }
+}
