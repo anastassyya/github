@@ -39,7 +39,6 @@ class Questions: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print (#function)
-        print ("topicchosen\(topicChosen)")
         array = readFromPlistQuestions()
     }
     
@@ -180,10 +179,7 @@ class Questions: UIViewController {
         array = readFromPlistQuestions()
         iterationQuestions ()
         
-            print("Begin of code")
-            let url = URL(string: "https://raw.githubusercontent.com/anastassyya/github/master/Pictures/cvety-gory-pejzazh-priroda-rasteniya-41477.jpg")!
-//            downloadImage(from: url)
-            print("End of code. The image will continue downloading in the background and it will be loaded when it ends.")
+            
 
         
         //        numberOfQuestion += 1

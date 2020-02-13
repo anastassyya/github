@@ -100,7 +100,6 @@ class TopicTableViewController: UITableViewController {
         if let url = URL(string: link) {
         downloadImage(from: url, image: cell.topicImageView)
         }
-        print (topic)
     
         
         return cell
@@ -121,14 +120,13 @@ func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) 
 }
 
     func downloadImage(from url: URL, image: UIImageView) {
-    print("Download Started")
     getData(from: url) { data, response, error in
         guard let data = data, error == nil else { return }
         print(response?.suggestedFilename ?? url.lastPathComponent)
         print("Download Finished")
         DispatchQueue.main.async() {
             image.image = UIImage(data: data)
-            print ("mgmgmgm")
+        
     }
 
     }
