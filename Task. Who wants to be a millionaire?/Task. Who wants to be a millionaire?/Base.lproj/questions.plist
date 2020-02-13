@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>questions</key>
+	<dict>
+		<key>Живопись</key>
+		<array>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Изображение автомобиля</string>
+					<string>Портрет музы художника</string>
+					<string>Портрет художника</string>
+					<string>Портрет матери художника</string>
+				</array>
+				<key>question</key>
+				<string>Что такое автопортрет?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Этюдник</string>
+					<string>Палитра</string>
+					<string>Мастихин</string>
+					<string>Сангина</string>
+				</array>
+				<key>question</key>
+				<string>Как называется небольшая доска, на которой художник смешивает краски?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Микеланджело</string>
+					<string>Рафаэль</string>
+					<string>Пабло Пикассо</string>
+					<string>Леонардо да Винчи</string>
+				</array>
+				<key>question</key>
+				<string>Кто является автором одной из величайших картин всех времен и народов – «Джоконды»?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string>Соус</string>
+					<string>Специя</string>
+					<string>Соль</string>
+					<string>Уксус</string>
+				</array>
+				<key>question</key>
+				<string>Название какого рисовального материала звучит так же, как наименование группы приправ в кулинарии?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Красный</string>
+					<string>Белый</string>
+					<string>Зеленый</string>
+					<string>Желтый</string>
+				</array>
+				<key>question</key>
+				<string>Какой из этих цветов считается холодным?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Пейзаж</string>
+					<string>Портрет</string>
+					<string>Анимализм</string>
+					<string>Натюрморт</string>
+				</array>
+				<key>question</key>
+				<string>Название какого популярного жанра изобразительного искусства переводится с французского как «мертвая натура»?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Исторический жанр</string>
+					<string>Батальный жанр</string>
+					<string>Бытовой жанр</string>
+					<string>Милитарный жанр</string>
+				</array>
+				<key>question</key>
+				<string>Как называется отрасль изобразительного искусства, посвященная военной тематике?</string>
+			</dict>
+		</array>
+		<key>Кино, театр</key>
+		<array>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Профессор</string>
+					<string>Доктор</string>
+					<string>Кандидат наук</string>
+					<string>Доцент</string>
+				</array>
+				<key>question</key>
+				<string>Какого ученого звания неожиданно для себя удостоился скромный директор детского сада, он же «джентльмен удачи»? </string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Серебряная калоша</string>
+					<string>Бриллиантовая рука</string>
+					<string>Золотая малина</string>
+					<string>Алмазная поляна</string>
+				</array>
+				<key>question</key>
+				<string>Как называется приз, который в Америке присуждается худшей кинокартине? </string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Людмила Гурченко</string>
+					<string>Фаина Раневская</string>
+					<string>Нина Русланова</string>
+					<string>Нонна Мордюкова</string>
+				</array>
+				<key>question</key>
+				<string>Какая актриса после болезни произнесла: «Если больной очень хочет жить, то врачи бессильны»?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string>от ума</string>
+					<string>луковое</string>
+					<string>Федорино</string>
+					<string>без ума</string>
+				</array>
+				<key>question</key>
+				<string> Как заканчивается название комедии А.С. Грибоедова: «Горе...»?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Пес</string>
+					<string>Бабушка</string>
+					<string>Дед Мороз</string>
+					<string>Волк</string>
+				</array>
+				<key>question</key>
+				<string>Кто в мультипликационном фильме «Жил-был пёс» помог старому псу вернуться домой?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string>Олег Табаков</string>
+					<string>Василий Лановой</string>
+					<string>Олег Янковский</string>
+					<string>Юрий Никулин</string>
+				</array>
+				<key>question</key>
+				<string>Кто в мультфильме «Каникулы в Простоквашино» озвучивал роль кота Матроскина?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>ТЮЗ</string>
+					<string>Фанерка</string>
+					<string>Щепка</string>
+					<string>Капустник</string>
+				</array>
+				<key>question</key>
+				<string>Как часто называют театральное училище при Государственном академическом Малом театре?</string>
+			</dict>
+		</array>
+		<key>Химия</key>
+		<array>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>H2O</string>
+					<string>NaCl</string>
+					<string>H2</string>
+					<string>ClCa</string>
+				</array>
+				<key>question</key>
+				<string>Какая формула поваренной соли?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Серебро</string>
+					<string>Алюминий</string>
+					<string>Медь</string>
+					<string>Золото</string>
+				</array>
+				<key>question</key>
+				<string>Назовите металл, вызывающий “лихорадку”</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Алюминий</string>
+					<string>Олово</string>
+					<string>Железо</string>
+					<string>Платина</string>
+				</array>
+				<key>question</key>
+				<string>Какой металл может болеть “чумой”? </string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string>Пробирка</string>
+					<string>Стакан</string>
+					<string>Пиала</string>
+					<string>Колба</string>
+				</array>
+				<key>question</key>
+				<string>В этой стеклянной посуде смешивают малые количества вещества и проводят химические реакции</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Фтор</string>
+					<string>Золото</string>
+					<string>Фосфор</string>
+					<string>Медь</string>
+				</array>
+				<key>question</key>
+				<string>Какой неметалл был назван “элементом жизни и мысли”? </string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Азот</string>
+					<string>Соляная кислота</string>
+					<string>Уксусная кислота</string>
+					<string>Серная кислота</string>
+				</array>
+				<key>question</key>
+				<string>Что такое купоросное масло?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Серебро</string>
+					<string>Медь</string>
+					<string>Олово</string>
+					<string>Алюминий</string>
+				</array>
+				<key>question</key>
+				<string>Какой легкий металл используют в самолетостроении?</string>
+			</dict>
+		</array>
+		<key>Вопросы для детей</key>
+		<array>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>ми</string>
+					<string>до</string>
+					<string>си</string>
+					<string>ля</string>
+				</array>
+				<key>question</key>
+				<string>За какой нотой следует нота «ре»?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>метр</string>
+					<string>километр</string>
+					<string>миллиметр</string>
+					<string>дециметр</string>
+				</array>
+				<key>question</key>
+				<string>Как называется мера длины, равная 10 сантиметрам?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Подосиновик</string>
+					<string>Белый</string>
+					<string>Поганка</string>
+					<string>Лисичка</string>
+				</array>
+				<key>question</key>
+				<string>Как иначе называется гриб боровик?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>чайка</string>
+					<string>журавель</string>
+					<string>синица</string>
+					<string>кукушка</string>
+				</array>
+				<key>question</key>
+				<string>Какая птица не имеет своего гнезда? </string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string>Ступа</string>
+					<string>Боинг</string>
+					<string>Вертолет</string>
+					<string>Парашют</string>
+				</array>
+				<key>question</key>
+				<string>Как называется аппарат, на котором Баба Яга совершает полет?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Иванов</string>
+					<string>Матроскин</string>
+					<string>Печкин</string>
+					<string>Простоквашин</string>
+				</array>
+				<key>question</key>
+				<string>Какая фамилия была у почтальона деревни Простоквашино?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Маринад</string>
+					<string>Мармелад</string>
+					<string>Лимонад</string>
+					<string>Рафинад</string>
+				</array>
+				<key>question</key>
+				<string>Как называется сахар в кусочках?</string>
+			</dict>
+		</array>
+		<key>Русский язык</key>
+		<array>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Мешать</string>
+					<string>Мех</string>
+					<string>Мешкать</string>
+					<string>Мещанин</string>
+				</array>
+				<key>question</key>
+				<string>От какого слова происходит слово &quot;мешок&quot;?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Ы</string>
+					<string>Й</string>
+					<string>Ц</string>
+					<string>Ё</string>
+				</array>
+				<key>question</key>
+				<string>Этой букве, незаслуженно обиженной, в 2005 году в городе Ульяновске был поставлен памятник</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Сапфирный</string>
+					<string>Маренго</string>
+					<string>Васильковый</string>
+					<string>Индиго</string>
+				</array>
+				<key>question</key>
+				<string>Сапфирный, индиго, васильковый, маренго. Ка­кое из этих слов лишнее?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Банан</string>
+					<string>Апельсин</string>
+					<string>Лимон</string>
+					<string>Арбуз</string>
+				</array>
+				<key>question</key>
+				<string>Название этого любимого нами фрукта в пе­реводе с голландского означает «китайское ябло­ко».</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>Тюль</string>
+					<string>Аэрозоль</string>
+					<string>Толь</string>
+					<string>Мозоль</string>
+				</array>
+				<key>question</key>
+				<string>Тюль, толь, мозоль, аэрозоль. Какие из этих слов относятся к женскому роду?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Ромашка</string>
+					<string>Тюльпан</string>
+					<string>Астра</string>
+					<string>Пион</string>
+				</array>
+				<key>question</key>
+				<string>Название этого цветка в переводе с греческого означает «звезда». О каком цветке идет речь?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Математика</key>
+		<array>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Прямая</string>
+					<string>Гипербола</string>
+					<string>Парабола</string>
+					<string>Аргумент</string>
+				</array>
+				<key>question</key>
+				<string>Как называется график квадратичной функции?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string>11</string>
+					<string>0</string>
+					<string>1</string>
+					<string>22</string>
+				</array>
+				<key>question</key>
+				<string>Какое наименьшее число, кратное 11?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+				<key>answers</key>
+				<array>
+					<string>35 минут</string>
+					<string>30 минут</string>
+					<string>6 минут</string>
+					<string>36 минут</string>
+				</array>
+				<key>question</key>
+				<string>3/5 часа, выраженные в минутах</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Проценты</string>
+					<string>Уравнение</string>
+					<string>Пропорция</string>
+					<string>Произведение</string>
+				</array>
+				<key>question</key>
+				<string>Выражение, показывающее соотношение между величинами</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Неправильная</string>
+					<string>Десятичная</string>
+					<string>Правильная</string>
+					<string>Рациональная</string>
+				</array>
+				<key>question</key>
+				<string>Как называется дробь, числитель которой меньше ее знаменателя?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Звено</string>
+					<string>Центр</string>
+					<string>Радиус</string>
+					<string>Градус</string>
+				</array>
+				<key>question</key>
+				<string>Как называется точка, равноудаленная от всех точек окружности?</string>
+			</dict>
+		</array>
+		<key>Музыка</key>
+		<array>
+			<dict>
+				<key>question</key>
+				<string>Какой город считается родиной джаза?</string>
+				<key>answers</key>
+				<array>
+					<string>Нью-Йорк</string>
+					<string>Чикаго</string>
+					<string>Одесса</string>
+					<string>Новый Орлеан</string>
+				</array>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string>Индус</string>
+					<string>Индеец</string>
+					<string>Азиат</string>
+					<string>Индианец</string>
+				</array>
+				<key>question</key>
+				<string>Как называют жителя Индии?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>География</key>
+		<array>
+			<dict>
+				<key>question</key>
+				<string>Какое государство ежегодно дарит Лондону ёлку для Трафальгарской площади?</string>
+				<key>answers</key>
+				<array>
+					<string>Эстония</string>
+					<string>Швеция</string>
+					<string>Дания</string>
+					<string>Норвегия</string>
+				</array>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+				<key>answers</key>
+				<array>
+					<string>Лихтенштейн</string>
+					<string>Андорра</string>
+					<string>Люксембург</string>
+					<string>Монако</string>
+				</array>
+				<key>question</key>
+				<string>Как называется единственное в Европе герцогство?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string>Где на земном шаре день равен ночи в течение всего года?</string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>История</key>
+		<array>
+			<dict>
+				<key>question</key>
+				<string>Сыном какого царя называл себя Лжедмитрий I?</string>
+				<key>answers</key>
+				<array>
+					<string>Алексей Михайлович</string>
+					<string>Иван Грозный</string>
+					<string>Борис Годунов</string>
+					<string>Федор Иоаннович</string>
+				</array>
+				<key>rightAnswerIndex</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>question</key>
+				<string>В каком немецком городе родилась будущая императрица России Екатерина II?</string>
+				<key>answers</key>
+				<array>
+					<string>Штеттин</string>
+					<string>Дармштадт</string>
+					<string>Цербст</string>
+					<string>Висбаден</string>
+				</array>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>question</key>
+				<string>Из какого меха сделаны шапки королевских гвардейцев Великобритании?</string>
+				<key>answers</key>
+				<array>
+					<string>соболиный</string>
+					<string>медвежий</string>
+					<string>волчий</string>
+					<string>овечий</string>
+				</array>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>1</integer>
+				<key>answers</key>
+				<array>
+					<string>Китай</string>
+					<string>Индию</string>
+					<string>Японию</string>
+					<string>Эфиопию</string>
+				</array>
+				<key>question</key>
+				<string>Что искал Колумб, а в результате открыл Америку?</string>
+			</dict>
+			<dict>
+				<key>question</key>
+				<string>Где на земном шаре день равен ночи в течение всего года?</string>
+				<key>answers</key>
+				<array>
+					<string>На нулевом меридиане</string>
+					<string>На полярном круге</string>
+					<string>На полюсах</string>
+					<string>На экваторе</string>
+				</array>
+				<key>rightAnswerIndex</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>rightAnswerIndex</key>
+				<integer>0</integer>
+				<key>answers</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+				<key>question</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>listOfQuestions</key>
+	<dict>
+		<key>Где на земном шаре день равен ночи в течение всего года?</key>
+		<dict>
+			<key>false answer</key>
+			<array>
+				<string>На нулевом меридиане</string>
+				<string>На полярном круге</string>
+				<string>На полюсах</string>
+			</array>
+			<key>true answer</key>
+			<string>На экваторе</string>
+		</dict>
+		<key>Что искал Колумб, а в результате открыл Америку?</key>
+		<dict>
+			<key>true answer</key>
+			<string>Индию</string>
+			<key>false answer</key>
+			<array>
+				<string>Китай</string>
+				<string>Японию</string>
+				<string>Эфиопию</string>
+			</array>
+		</dict>
+		<key>Как называется единственное в Европе герцогство?</key>
+		<dict>
+			<key>false answer</key>
+			<array>
+				<string>Лихтенштейн</string>
+				<string>Андорра</string>
+				<string>Монако</string>
+			</array>
+			<key>true answer</key>
+			<string>Люксембург</string>
+		</dict>
+		<key>Какой город считается родиной джаза?</key>
+		<dict>
+			<key>false answer</key>
+			<array>
+				<string>Одесса</string>
+				<string>Нью-Йорк</string>
+				<string>Чикаго</string>
+			</array>
+			<key>true answer</key>
+			<string>Новый Орлеан</string>
+		</dict>
+		<key>Из какого меха сделаны шапки королевских гвардейцев Великобритании?</key>
+		<dict>
+			<key>false answer</key>
+			<array>
+				<string>Соболиный</string>
+				<string>Волчий</string>
+				<string>Овечий</string>
+			</array>
+			<key>true answer</key>
+			<string>Медвежий</string>
+		</dict>
+		<key>Кольцо какого цвета на олимпийском флаге символизирует Европу?</key>
+		<dict>
+			<key>true answer</key>
+			<string>Голубого</string>
+			<key>false answer</key>
+			<array>
+				<string>Зеленого</string>
+				<string>Красного</string>
+				<string>Жёлтого</string>
+			</array>
+		</dict>
+		<key>Сыном какого царя называл себя Лжедмитрий I?</key>
+		<dict>
+			<key>true answer</key>
+			<string>Иван Грозный</string>
+			<key>false answer</key>
+			<array>
+				<string>Алексей Михайлович</string>
+				<string>Борис Годунов</string>
+				<string>Федор Иоаннович</string>
+			</array>
+		</dict>
+		<key>Какое государство ежегодно дарит Лондону ёлку для Трафальгарской площади?</key>
+		<dict>
+			<key>false answer</key>
+			<array>
+				<string>Эстония</string>
+				<string>Швеция</string>
+				<string>Дания</string>
+			</array>
+			<key>true answer</key>
+			<string>Норвегия</string>
+		</dict>
+		<key>В каком немецком городе родилась будущая императрица России Екатерина II?</key>
+		<dict>
+			<key>true answer</key>
+			<string>Штеттин</string>
+			<key>false answer</key>
+			<array>
+				<string>Дармштадт</string>
+				<string>Цербст</string>
+				<string>Висбаден</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

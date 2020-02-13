@@ -1,0 +1,36 @@
+
+/* Class = "UIButton"; normalTitle = "Новая игра"; ObjectID = "C6u-ft-CgG"; */
+"C6u-ft-CgG.normalTitle" = "Новая игра";
+
+/* Class = "UIButton"; normalTitle = "Забрать деньги"; ObjectID = "H0w-0r-IPP"; */
+"H0w-0r-IPP.normalTitle" = "Забрать деньги";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KDY-R8-zzV"; */
+"KDY-R8-zzV.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Pi0-Ft-ykN"; */
+"Pi0-Ft-ykN.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Помощь зала"; ObjectID = "VGb-UV-lWi"; */
+"VGb-UV-lWi.normalTitle" = "Помощь зала";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "b8k-bM-IVq"; */
+"b8k-bM-IVq.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bro-3U-MPJ"; */
+"bro-3U-MPJ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Следующий вопрос"; ObjectID = "mfF-nH-H4D"; */
+"mfF-nH-H4D.normalTitle" = "Следующий вопрос";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "phl-Ov-5Vw"; */
+"phl-Ov-5Vw.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Архив предыдущих игр"; ObjectID = "vQW-Jl-UeA"; */
+"vQW-Jl-UeA.normalTitle" = "Архив предыдущих игр";
+
+/* Class = "UIButton"; normalTitle = "Звонок другу"; ObjectID = "wm1-ot-G29"; */
+"wm1-ot-G29.normalTitle" = "Звонок другу";
+
+/* Class = "UIButton"; normalTitle = "ОК"; ObjectID = "zfx-Do-c5u"; */
+"zfx-Do-c5u.normalTitle" = "ОК";
