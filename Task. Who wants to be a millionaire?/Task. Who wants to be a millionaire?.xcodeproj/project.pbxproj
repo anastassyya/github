@@ -7,44 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D11EB55A23E7E81D00A53372 /* userAnswers.plist in Resources */ = {isa = PBXBuildFile; fileRef = D11EB55923E7E81C00A53372 /* userAnswers.plist */; };
-		D14C899C23F27A110008F443 /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C899B23F27A110008F443 /* TopicTableViewController.swift */; };
+		D14C899C23F27A110008F443 /* TopicTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C899B23F27A110008F443 /* TopicTableVC.swift */; };
 		D14C899E23F5EE360008F443 /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C899D23F5EE360008F443 /* TopicTableViewCell.swift */; };
-		D198DA4E23D4B49600E8930D /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DA4D23D4B49600E8930D /* Structs.swift */; };
+		D1707ED723F98B2900247D86 /* ArchiveOfGamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1707ED623F98B2900247D86 /* ArchiveOfGamesTableViewCell.swift */; };
+		D1707EDB23FDCB4400247D86 /* ArchiveOfQuestionsAndAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1707EDA23FDCB4400247D86 /* ArchiveOfQuestionsAndAnswers.swift */; };
+		D1707EE723FF1DD600247D86 /* topics.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1707EE623FF1DD500247D86 /* topics.plist */; };
+		D198DA4E23D4B49600E8930D /* QuestionsAndAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DA4D23D4B49600E8930D /* QuestionsAndAnswers.swift */; };
+		D1CFA8322403D33300D00C7C /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CFA8312403D33300D00C7C /* Logic.swift */; };
+		D1CFA83C2403F8CF00D00C7C /* confirmation.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CFA83A2403F8CF00D00C7C /* confirmation.json */; };
+		D1CFA83D2403F8CF00D00C7C /* win.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CFA83B2403F8CF00D00C7C /* win.json */; };
+		D1CFA8412403F8DF00D00C7C /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CFA83F2403F8DF00D00C7C /* money.json */; };
+		D1CFA8452404079000D00C7C /* failure.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CFA8442404079000D00C7C /* failure.json */; };
+		D1CFA8472404079700D00C7C /* dont worry.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CFA8462404079600D00C7C /* dont worry.json */; };
+		D1CFA84B24040D8900D00C7C /* wink.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CFA84A24040D8900D00C7C /* wink.json */; };
+		D1CFA84D2404EC5E00D00C7C /* expectation.json in Resources */ = {isa = PBXBuildFile; fileRef = D1CFA84C2404EC5E00D00C7C /* expectation.json */; };
 		D1DDDCBC23D45BEF0080BB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCBB23D45BEF0080BB56 /* AppDelegate.swift */; };
-		D1DDDCBE23D45BEF0080BB56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCBD23D45BEF0080BB56 /* ViewController.swift */; };
 		D1DDDCC123D45BEF0080BB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DDDCBF23D45BEF0080BB56 /* Main.storyboard */; };
 		D1DDDCC323D45BF40080BB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DDDCC223D45BF40080BB56 /* Assets.xcassets */; };
 		D1DDDCC623D45BF40080BB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DDDCC423D45BF40080BB56 /* LaunchScreen.storyboard */; };
-		D1DDDCCE23D45C940080BB56 /* InitialWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCCD23D45C940080BB56 /* InitialWindow.swift */; };
-		D1DDDCD023D45CAF0080BB56 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCCF23D45CAF0080BB56 /* Questions.swift */; };
-		D1DDDCD223D45CF10080BB56 /* ChoiceWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD123D45CF10080BB56 /* ChoiceWindow.swift */; };
-		D1DDDCD423D45D0B0080BB56 /* Win.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD323D45D0B0080BB56 /* Win.swift */; };
-		D1DDDCD623D45D320080BB56 /* Losing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD523D45D320080BB56 /* Losing.swift */; };
-		D1DDDCD823D45D820080BB56 /* ArchiveOfGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD723D45D820080BB56 /* ArchiveOfGames.swift */; };
-		D1DDDCDA23D45D9B0080BB56 /* ArchiveGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD923D45D9B0080BB56 /* ArchiveGame.swift */; };
+		D1DDDCCE23D45C940080BB56 /* InitialWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCCD23D45C940080BB56 /* InitialWindowVC.swift */; };
+		D1DDDCD023D45CAF0080BB56 /* QuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCCF23D45CAF0080BB56 /* QuestionsVC.swift */; };
+		D1DDDCD223D45CF10080BB56 /* ChoiceWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD123D45CF10080BB56 /* ChoiceWindowVC.swift */; };
+		D1DDDCD423D45D0B0080BB56 /* WinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD323D45D0B0080BB56 /* WinVC.swift */; };
+		D1DDDCD623D45D320080BB56 /* LosingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD523D45D320080BB56 /* LosingVC.swift */; };
+		D1DDDCD823D45D820080BB56 /* ArchiveOfGamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD723D45D820080BB56 /* ArchiveOfGamesVC.swift */; };
+		D1DDDCDA23D45D9B0080BB56 /* ArchiveGameDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDCD923D45D9B0080BB56 /* ArchiveGameDetailVC.swift */; };
 		D1DDDCE123D479C30080BB56 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1DDDCE323D479C30080BB56 /* questions.plist */; };
+		E5B83847AB3D4A0A74D13BA0 /* libPods-Task. Who wants to be a millionaire?.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DBE8D9D1A54D8B55328EDB /* libPods-Task. Who wants to be a millionaire?.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D11EB55923E7E81C00A53372 /* userAnswers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = userAnswers.plist; sourceTree = "<group>"; };
-		D14C899B23F27A110008F443 /* TopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
-		D14C899D23F5EE360008F443 /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
-		D198DA4D23D4B49600E8930D /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		8A3F062EA9C8F9938157AACA /* Pods-Task. Who wants to be a millionaire?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task. Who wants to be a millionaire?.release.xcconfig"; path = "Target Support Files/Pods-Task. Who wants to be a millionaire?/Pods-Task. Who wants to be a millionaire?.release.xcconfig"; sourceTree = "<group>"; };
+		95DBE8D9D1A54D8B55328EDB /* libPods-Task. Who wants to be a millionaire?.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Task. Who wants to be a millionaire?.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECB16EE59177C9EBEDC5164 /* Pods-Task. Who wants to be a millionaire?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task. Who wants to be a millionaire?.debug.xcconfig"; path = "Target Support Files/Pods-Task. Who wants to be a millionaire?/Pods-Task. Who wants to be a millionaire?.debug.xcconfig"; sourceTree = "<group>"; };
+		D14C899B23F27A110008F443 /* TopicTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableVC.swift; sourceTree = "<group>"; };
+		D14C899D23F5EE360008F443 /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopicTableViewCell.swift; path = ../VC/TopicTableViewCell.swift; sourceTree = "<group>"; };
+		D1707ED623F98B2900247D86 /* ArchiveOfGamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArchiveOfGamesTableViewCell.swift; path = ../VC/ArchiveOfGamesTableViewCell.swift; sourceTree = "<group>"; };
+		D1707EDA23FDCB4400247D86 /* ArchiveOfQuestionsAndAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveOfQuestionsAndAnswers.swift; sourceTree = "<group>"; };
+		D1707EE623FF1DD500247D86 /* topics.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = topics.plist; sourceTree = "<group>"; };
+		D198DA4D23D4B49600E8930D /* QuestionsAndAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsAndAnswers.swift; sourceTree = "<group>"; };
+		D1CFA8312403D33300D00C7C /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		D1CFA83A2403F8CF00D00C7C /* confirmation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = confirmation.json; path = ../../../../../../confirmation.json; sourceTree = "<group>"; };
+		D1CFA83B2403F8CF00D00C7C /* win.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = win.json; path = ../../../../../../win.json; sourceTree = "<group>"; };
+		D1CFA83F2403F8DF00D00C7C /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = money.json; path = ../../../../../../money.json; sourceTree = "<group>"; };
+		D1CFA8442404079000D00C7C /* failure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = failure.json; path = ../../../../../../failure.json; sourceTree = "<group>"; };
+		D1CFA8462404079600D00C7C /* dont worry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "dont worry.json"; path = "../../../../../../dont worry.json"; sourceTree = "<group>"; };
+		D1CFA84A24040D8900D00C7C /* wink.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = wink.json; path = ../../../../../../wink.json; sourceTree = "<group>"; };
+		D1CFA84C2404EC5E00D00C7C /* expectation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = expectation.json; path = ../../../../../../../Downloads/expectation.json; sourceTree = "<group>"; };
 		D1DDDCB823D45BEF0080BB56 /* Task. Who wants to be a millionaire?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task. Who wants to be a millionaire?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DDDCBB23D45BEF0080BB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1DDDCBD23D45BEF0080BB56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1DDDCC023D45BEF0080BB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1DDDCC223D45BF40080BB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1DDDCC523D45BF40080BB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1DDDCC723D45BF40080BB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1DDDCCD23D45C940080BB56 /* InitialWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialWindow.swift; sourceTree = "<group>"; };
-		D1DDDCCF23D45CAF0080BB56 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
-		D1DDDCD123D45CF10080BB56 /* ChoiceWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceWindow.swift; sourceTree = "<group>"; };
-		D1DDDCD323D45D0B0080BB56 /* Win.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win.swift; sourceTree = "<group>"; };
-		D1DDDCD523D45D320080BB56 /* Losing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Losing.swift; sourceTree = "<group>"; };
-		D1DDDCD723D45D820080BB56 /* ArchiveOfGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveOfGames.swift; sourceTree = "<group>"; };
-		D1DDDCD923D45D9B0080BB56 /* ArchiveGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveGame.swift; sourceTree = "<group>"; };
+		D1DDDCCD23D45C940080BB56 /* InitialWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialWindowVC.swift; sourceTree = "<group>"; };
+		D1DDDCCF23D45CAF0080BB56 /* QuestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsVC.swift; sourceTree = "<group>"; };
+		D1DDDCD123D45CF10080BB56 /* ChoiceWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceWindowVC.swift; sourceTree = "<group>"; };
+		D1DDDCD323D45D0B0080BB56 /* WinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinVC.swift; sourceTree = "<group>"; };
+		D1DDDCD523D45D320080BB56 /* LosingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LosingVC.swift; sourceTree = "<group>"; };
+		D1DDDCD723D45D820080BB56 /* ArchiveOfGamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveOfGamesVC.swift; sourceTree = "<group>"; };
+		D1DDDCD923D45D9B0080BB56 /* ArchiveGameDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveGameDetailVC.swift; sourceTree = "<group>"; };
 		D1DDDCE923D488F30080BB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/questions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,25 +75,96 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B83847AB3D4A0A74D13BA0 /* libPods-Task. Who wants to be a millionaire?.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65AAA992FE1874A11E94ACAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AECB16EE59177C9EBEDC5164 /* Pods-Task. Who wants to be a millionaire?.debug.xcconfig */,
+				8A3F062EA9C8F9938157AACA /* Pods-Task. Who wants to be a millionaire?.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F316B5AE5D0E2A020D185CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95DBE8D9D1A54D8B55328EDB /* libPods-Task. Who wants to be a millionaire?.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D11EB55823E6ABA900A53372 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				D1DDDCCD23D45C940080BB56 /* InitialWindow.swift */,
-				D14C899B23F27A110008F443 /* TopicTableViewController.swift */,
-				D1DDDCBD23D45BEF0080BB56 /* ViewController.swift */,
-				D1DDDCD323D45D0B0080BB56 /* Win.swift */,
-				D1DDDCD123D45CF10080BB56 /* ChoiceWindow.swift */,
-				D1DDDCD523D45D320080BB56 /* Losing.swift */,
-				D1DDDCCF23D45CAF0080BB56 /* Questions.swift */,
-				D14C899D23F5EE360008F443 /* TopicTableViewCell.swift */,
+				D1DDDCCD23D45C940080BB56 /* InitialWindowVC.swift */,
+				D14C899B23F27A110008F443 /* TopicTableVC.swift */,
+				D1DDDCCF23D45CAF0080BB56 /* QuestionsVC.swift */,
+				D1DDDCD323D45D0B0080BB56 /* WinVC.swift */,
+				D1DDDCD123D45CF10080BB56 /* ChoiceWindowVC.swift */,
+				D1DDDCD523D45D320080BB56 /* LosingVC.swift */,
+				D1DDDCD723D45D820080BB56 /* ArchiveOfGamesVC.swift */,
+				D1DDDCD923D45D9B0080BB56 /* ArchiveGameDetailVC.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		D14C89A723F7BB010008F443 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFA8392403F8BE00D00C7C /* json */,
+				D1DDDCE323D479C30080BB56 /* questions.plist */,
+				D1707EE623FF1DD500247D86 /* topics.plist */,
+				D1DDDCC223D45BF40080BB56 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1707ED823FCFA8E00247D86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D14C899D23F5EE360008F443 /* TopicTableViewCell.swift */,
+				D1707ED623F98B2900247D86 /* ArchiveOfGamesTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1707ED923FCFCBB00247D86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D198DA4D23D4B49600E8930D /* QuestionsAndAnswers.swift */,
+				D1CFA8312403D33300D00C7C /* Logic.swift */,
+				D1707EDA23FDCB4400247D86 /* ArchiveOfQuestionsAndAnswers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1707EDC23FDCD1B00247D86 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D1DDDCBF23D45BEF0080BB56 /* Main.storyboard */,
+				D1DDDCC423D45BF40080BB56 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D1CFA8392403F8BE00D00C7C /* json */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFA84C2404EC5E00D00C7C /* expectation.json */,
+				D1CFA83B2403F8CF00D00C7C /* win.json */,
+				D1CFA83F2403F8DF00D00C7C /* money.json */,
+				D1CFA8442404079000D00C7C /* failure.json */,
+				D1CFA84A24040D8900D00C7C /* wink.json */,
+				D1CFA8462404079600D00C7C /* dont worry.json */,
+				D1CFA83A2403F8CF00D00C7C /* confirmation.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 		D1DDDCAF23D45BEF0080BB56 = {
@@ -79,6 +172,8 @@
 			children = (
 				D1DDDCBA23D45BEF0080BB56 /* Task. Who wants to be a millionaire? */,
 				D1DDDCB923D45BEF0080BB56 /* Products */,
+				65AAA992FE1874A11E94ACAD /* Pods */,
+				8F316B5AE5D0E2A020D185CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,16 +188,12 @@
 		D1DDDCBA23D45BEF0080BB56 /* Task. Who wants to be a millionaire? */ = {
 			isa = PBXGroup;
 			children = (
+				D1707EDC23FDCD1B00247D86 /* Storyboards */,
+				D1707ED923FCFCBB00247D86 /* Model */,
+				D1707ED823FCFA8E00247D86 /* View */,
+				D14C89A723F7BB010008F443 /* Resources */,
 				D11EB55823E6ABA900A53372 /* VC */,
 				D1DDDCBB23D45BEF0080BB56 /* AppDelegate.swift */,
-				D1DDDCBF23D45BEF0080BB56 /* Main.storyboard */,
-				D198DA4D23D4B49600E8930D /* Structs.swift */,
-				D1DDDCE323D479C30080BB56 /* questions.plist */,
-				D11EB55923E7E81C00A53372 /* userAnswers.plist */,
-				D1DDDCD723D45D820080BB56 /* ArchiveOfGames.swift */,
-				D1DDDCD923D45D9B0080BB56 /* ArchiveGame.swift */,
-				D1DDDCC223D45BF40080BB56 /* Assets.xcassets */,
-				D1DDDCC423D45BF40080BB56 /* LaunchScreen.storyboard */,
 				D1DDDCC723D45BF40080BB56 /* Info.plist */,
 			);
 			path = "Task. Who wants to be a millionaire?";
@@ -115,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1DDDCCA23D45BF40080BB56 /* Build configuration list for PBXNativeTarget "Task. Who wants to be a millionaire?" */;
 			buildPhases = (
+				664BC6630BBFD84C20E9D643 /* [CP] Check Pods Manifest.lock */,
 				D1DDDCB423D45BEF0080BB56 /* Sources */,
 				D1DDDCB523D45BEF0080BB56 /* Frameworks */,
 				D1DDDCB623D45BEF0080BB56 /* Resources */,
@@ -166,33 +258,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CFA8412403F8DF00D00C7C /* money.json in Resources */,
 				D1DDDCE123D479C30080BB56 /* questions.plist in Resources */,
+				D1CFA84B24040D8900D00C7C /* wink.json in Resources */,
+				D1CFA8452404079000D00C7C /* failure.json in Resources */,
+				D1CFA84D2404EC5E00D00C7C /* expectation.json in Resources */,
 				D1DDDCC623D45BF40080BB56 /* LaunchScreen.storyboard in Resources */,
+				D1CFA8472404079700D00C7C /* dont worry.json in Resources */,
 				D1DDDCC323D45BF40080BB56 /* Assets.xcassets in Resources */,
+				D1707EE723FF1DD600247D86 /* topics.plist in Resources */,
+				D1CFA83C2403F8CF00D00C7C /* confirmation.json in Resources */,
+				D1CFA83D2403F8CF00D00C7C /* win.json in Resources */,
 				D1DDDCC123D45BEF0080BB56 /* Main.storyboard in Resources */,
-				D11EB55A23E7E81D00A53372 /* userAnswers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		664BC6630BBFD84C20E9D643 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Task. Who wants to be a millionaire?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1DDDCB423D45BEF0080BB56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DDDCCE23D45C940080BB56 /* InitialWindow.swift in Sources */,
+				D1DDDCCE23D45C940080BB56 /* InitialWindowVC.swift in Sources */,
 				D14C899E23F5EE360008F443 /* TopicTableViewCell.swift in Sources */,
-				D1DDDCDA23D45D9B0080BB56 /* ArchiveGame.swift in Sources */,
-				D1DDDCD423D45D0B0080BB56 /* Win.swift in Sources */,
-				D1DDDCD223D45CF10080BB56 /* ChoiceWindow.swift in Sources */,
-				D1DDDCD823D45D820080BB56 /* ArchiveOfGames.swift in Sources */,
-				D198DA4E23D4B49600E8930D /* Structs.swift in Sources */,
-				D14C899C23F27A110008F443 /* TopicTableViewController.swift in Sources */,
-				D1DDDCD023D45CAF0080BB56 /* Questions.swift in Sources */,
-				D1DDDCBE23D45BEF0080BB56 /* ViewController.swift in Sources */,
+				D1DDDCDA23D45D9B0080BB56 /* ArchiveGameDetailVC.swift in Sources */,
+				D1DDDCD423D45D0B0080BB56 /* WinVC.swift in Sources */,
+				D1707ED723F98B2900247D86 /* ArchiveOfGamesTableViewCell.swift in Sources */,
+				D1DDDCD223D45CF10080BB56 /* ChoiceWindowVC.swift in Sources */,
+				D1DDDCD823D45D820080BB56 /* ArchiveOfGamesVC.swift in Sources */,
+				D198DA4E23D4B49600E8930D /* QuestionsAndAnswers.swift in Sources */,
+				D14C899C23F27A110008F443 /* TopicTableVC.swift in Sources */,
+				D1DDDCD023D45CAF0080BB56 /* QuestionsVC.swift in Sources */,
+				D1CFA8322403D33300D00C7C /* Logic.swift in Sources */,
+				D1707EDB23FDCB4400247D86 /* ArchiveOfQuestionsAndAnswers.swift in Sources */,
 				D1DDDCBC23D45BEF0080BB56 /* AppDelegate.swift in Sources */,
-				D1DDDCD623D45D320080BB56 /* Losing.swift in Sources */,
+				D1DDDCD623D45D320080BB56 /* LosingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +472,7 @@
 		};
 		D1DDDCCB23D45BF40080BB56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECB16EE59177C9EBEDC5164 /* Pods-Task. Who wants to be a millionaire?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +490,7 @@
 		};
 		D1DDDCCC23D45BF40080BB56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3F062EA9C8F9938157AACA /* Pods-Task. Who wants to be a millionaire?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/painting.jpg</string>
+		<key>topic</key>
+		<string>Живопись</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/history.jpg</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>История</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/geography.jpg</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>География</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/music.jpg</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>Музыка</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/mathematics.jpg</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>Математика</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/russian.jpg</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>Русский язык</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/children.jpg</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>Вопросы для детей</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/a</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>Химия</string>
+	</dict>
+	<dict>
+		<key>urlPicture</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Pictures/cinema.jpg</string>
+		<key>urlQuestions</key>
+		<string>https://raw.githubusercontent.com/anastassyya/github/master/Resources%20for%20Millionaire/questions.json</string>
+		<key>topic</key>
+		<string>Кино, театр</string>
+	</dict>
+</array>
+</plist>
